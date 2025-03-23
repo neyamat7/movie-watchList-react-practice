@@ -75,7 +75,7 @@ const MovieWatch = () => {
   });
 
   return (
-    <div className="text-center">
+    <div className="text-center max-w-screen-lg mx-auto px-5">
       <Heading />
       <MovieForm addMovie={addMovie} />
       <FilterButtons setFilter={setFilter} />
