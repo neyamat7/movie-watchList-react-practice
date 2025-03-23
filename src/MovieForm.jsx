@@ -16,6 +16,10 @@ const MovieForm = ({ addMovie }) => {
 
   function handleSubmit(e) {
     e.preventDefault();
+    if (!movieData.title || !movieData.ott) {
+      alert("invalid input");
+      return;
+    }
     addMovie(movieData);
     setMovieData({
       title: "",
